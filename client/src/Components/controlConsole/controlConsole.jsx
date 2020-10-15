@@ -5,12 +5,16 @@ import Logo from '../logo/logo'
 import CustomButton from '../customButton/customButton'
 import SearchForm from '../searchForm/searchForm'
 
-const ControlConsole = () => {
+import { useDispatch } from "react-redux";
+import {fetchCapsuleDataStartAsync}  from "../../redux/Capsules_state/capsules.action";
 
+
+const ControlConsole = () => {
+    const dispatch = useDispatch();
 
    return(
     <Control>
-        <CustomButton>Capsules</CustomButton>
+        <CustomButton onClick={()=> dispatch(fetchCapsuleDataStartAsync())}>Capsules</CustomButton>
         <Logo/>
         <SearchForm/>
     </Control>
