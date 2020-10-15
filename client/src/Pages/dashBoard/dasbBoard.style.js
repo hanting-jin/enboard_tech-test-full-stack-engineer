@@ -14,6 +14,7 @@ export const Dashboard = styled.div`
     padding:10px;
     ${BorderRadius};
 
+    // dashboard mobile layout
     @media screen and (min-width: 768px) and (max-width:1024px){
         display:flex;
         padding:0;
