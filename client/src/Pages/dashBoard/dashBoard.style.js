@@ -6,7 +6,6 @@ const mobileSize = css`
     height:100vh;
 `;
 
-
 export const Dashboard = styled.div`
     width:50%;
     height:50%;

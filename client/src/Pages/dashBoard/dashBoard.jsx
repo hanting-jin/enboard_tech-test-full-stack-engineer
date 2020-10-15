@@ -1,8 +1,14 @@
 import React from 'react';
-import {Dashboard} from './dasbBoard.style'
+import {Dashboard} from './dashBoard.style';
+
+import DisplayConsole from '../../Components/displayConsole/displayConsole'
+import ControlConsole from '../../Components/controlConsole/controlConsole';
 
 const DashboardPage = () => (
-    <Dashboard></Dashboard>
+    <Dashboard>
+        <DisplayConsole/>
+        <ControlConsole/>
+    </Dashboard>
 )
 
 export default DashboardPage;
